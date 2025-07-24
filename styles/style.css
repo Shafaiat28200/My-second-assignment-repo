@@ -295,7 +295,7 @@ color: #E95A08;
 }
 /* promo section */
 .header {
-            background: url('/images/assets/news-letter-bg.png') no-repeat center/cover;
+            background: url('./images/assets/news-letter-bg.png') no-repeat center/cover;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -318,7 +318,7 @@ color: #E95A08;
     
         }
         .subscribe-form input {
-            padding: 0 20px;
+            padding: 0 15px;
             font-size: 1rem;
             border: none;
             width: 644px;
@@ -339,7 +339,5 @@ color: #E95A08;
         .subscribe-form button:hover {
             background-color: #e07b2c;
         }
-
-        /* footer-section */
-
+      
         
