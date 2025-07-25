@@ -605,16 +605,16 @@ display: none;
    
     .subscribe-form {
         max-width: 100%;
-        margin: 0 20px; 
+        margin: 0 10px; 
     }
     
     .subscribe-form input {
         font-size: 0.95rem;
-        padding: 0 12px;
+        padding: 0 8px;
     }
     
     .subscribe-form button {
-        padding: 10px 25px;
+        padding: 6px 15px;
         font-size: 1rem;
     }
 
