@@ -209,13 +209,15 @@ margin-top: 22px;
 
 @media (max-width: 576px) {
   .grid-container {
-    grid-template-columns: repeat(2, minmax(180px,1fr)); 
-    gap: 10px;
+    
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
     
   }
-  
-  
-    
+  .grid{
+    gap:20px;
+    flex-wrap: wrap;
+  } 
   
   }
 
