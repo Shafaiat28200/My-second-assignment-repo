@@ -333,25 +333,25 @@ p{
 }
 .header h1 {
     font-family: "Noto Serif", serif;
-    font-size: 3.125rem;
+    font-size: 2.75rem;
     margin-bottom: 20px;
 }
 .subscribe-form {
     display: flex;
     width: 100%;
-    max-width: 700px;
+    max-width: 550px;
 }
 .subscribe-form input {
-    padding: 0 15px;
+    padding: 0 8px;
     font-size: 1rem;
     border: none;
     flex: 1;
-    height: 50px;
+    height: 45px;
 }
 
 .subscribe-form button {
     font-family: "Inter", sans-serif;
-    padding: 10px 40px;
+    padding: 7px 25px;
     font-size: 1.1rem;
     background-color: #E95A08;
     color: white;
@@ -598,23 +598,23 @@ display: none;
     }
     
     .header h1 {
-        font-size: 1.8rem;
+        font-size: 1.3rem;
         margin-bottom: 30px;
         line-height: 1.2;
     }
    
     .subscribe-form {
         max-width: 100%;
-        margin: 0 10px; 
+        margin: 0 8px; 
     }
     
     .subscribe-form input {
         font-size: 0.95rem;
-        padding: 0 8px;
+        padding: 0 7px;
     }
     
     .subscribe-form button {
-        padding: 6px 15px;
+        padding: 6px 12hpx;
         font-size: 1rem;
     }
 
