@@ -1,5 +1,21 @@
- /* Navbar section */
-  .navbar{
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navbar section */
+.navbar{
     text-align: center;
     align-items: center;
     justify-content: space-between;
@@ -8,460 +24,351 @@
     max-height: 71px;
     max-width: 1100px;
     margin: 30px auto;
-  }
-  .navbar.logo{
+    padding: 0 20px;
+}
+.navbar.logo{
     margin: 0;
-  }
-   nav ul{
+}
+nav ul{
     display: flex;
     justify-content: center;
-  }
-  nav li {
-   list-style: none; 
-   
-   }
-  
-  nav a{
+}
+nav li {
+    list-style: none; 
+}
+
+nav a{
     text-decoration: none;
-  }
-  nav li a{
+}
+nav li a{
     padding: 20px;
-    
-    
-  }
-  .dark-1{
+}
+.dark-1{
     font-family: "Noto Serif", serif;
     color: #252432;
     font-size: medium;
     font-weight: bold;
-  }
-  .dark-2{
+}
+.dark-2{
     color:#8987A1 ;
     font-size: medium;
     font-weight:400;
-  }
-  .dark-3{
+}
+.dark-3{
     color: #252432;
     font-size: medium;
     font-weight: 400;
-  }
-   
-   @media (max-width: 576px) {
-  .navbar {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 10px;
-    justify-content: space-between;
-  }
-
-  nav ul {
-    flex-direction: row;
-    width: 100%;
-    padding-left: 0;
-  }
-
-  nav li a {
-    padding: 10px 0;
-    display: block;
-    width: 100%;
-  }
-  .dark-1{
-    display: none;
-  }
-  .dark-2{
-    display: none;
-  }
 }
 
-
-
-
-
-
-  /* banner-section */
-
-  .banner-contain{
+/* banner-section */
+.banner-contain{
     max-height: 441px;
-  max-width: 1100px;
-  margin: 130px auto;
-  display: flex;
-  justify-content: space-between;
-  }
-  .write-section{
+    max-width: 1100px;
+    margin: 130px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.write-section{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    
-  }
- 
+    /* justify-content: flex-end; */
+    flex: 1;
+}
 
-   .dark-4{
+.dark-4{
     font-family: "Noto Serif", serif;
-   font-size:3.25rem ;
-   font-weight:bold ;
-   color:#000000;
-  }
-   .dark-5{
+    font-size:3.25rem ;
+    font-weight:bold ;
+    color:#000000;
+}
+.dark-5{
     font-family: "Noto Serif", serif;
-   font-size:3.25rem ;
-   font-weight:bold ;
-   color:#E95A08 ;
-  }
-  p{
+    font-size:3.25rem ;
+    font-weight:bold ;
+    color:#E95A08 ;
+}
+p{
     color: #00000050;
     font-size:1.1rem ;
-  }
+}
 
+.img-contain {
+    flex: 1;
+    text-align: center;
+}
 
-  @media (max-width: 576px) {
-  .banner-contain {
-    flex-direction: column;
-    align-items: start;
-    margin: 100% auto;
-    gap: 20px;
-    text-align: left;
-    
-   
-  }
-
-  .img-contain {
-    
-    order: -1; 
-  }
-
-  .write-section {
-    align-items: start;
-
-  }
-
-  .dark-4,
-  .dark-5 {
-    font-size: 2rem;
-  } 
-  }
-
-  p {
-    font-size: 1rem;
-    text-align: left;
-    
-  }
-
-
-
-
-
-  /* card section */
-
-  main{
+/* card section */
+main{
     max-width: 1100px;
     margin: 120px auto;
-  }
-  .card-des{
+    padding: 0 20px;
+}
+.card-des{
     text-align: center;
-  }
-  .dark-6{
+    margin-bottom: 50px;
+}
+.dark-6{
     font-family: "Noto Serif", serif;
-  color: #E95A08;
-  font-weight: bold;
-  font-size: 3.125rem;
-  }
- .dark-7{
-  font-family: "Noto Serif", serif;
-  color: #000000;
- font-weight: bold;
-  font-size: 3.125rem;
- }
- .grid-container{
-  display: grid;
-  grid-template-columns: repeat(4, minmax(180px, 1fr));
-  gap: 50px; 
-  padding: 10px;
+    color: #E95A08;
+    font-weight: bold;
+    font-size: 3.125rem;
+}
+.dark-7{
+    font-family: "Noto Serif", serif;
+    color: #000000;
+    font-weight: bold;
+    font-size: 3.125rem;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(180px, 1fr));
+    gap: 50px; 
+    padding: 10px;
+}
+
+.grid {
+    text-align: center;
 }
 
 .dark-9{
-  font-family: "Inter", sans-serif;
-  font-size: 1.1rem;
-  color: #000000;
-  font-weight:500;
-  margin-top: 15px;
-  text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 1.1rem;
+    color: #000000;
+    font-weight:500;
+    margin-top: 15px;
+    text-align: center;
 }
 .dark-10{
-  font-family: "Inter", sans-serif;
-  font-weight: bold;
-  font-size: 1.1rem;
-  margin-top: 15px;
-  text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 15px;
+    text-align: center;
 }
 .primary-btn{
-  font-family: "Inter", sans-serif;
-background-color: #E95A08;
-color: #ffff;
-font-weight:500;
-font-size: 1rem;
-width: 270px;
-padding: 10px;
-border: none;
-margin-top: 22px;
-
-}
-
-
-@media (max-width: 576px) {
-  .grid-container {
-    
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 20px;
-    
-  }
-  .grid{
-    gap:20px;
-    flex-wrap: wrap;
-  } 
-  
-  }
-
-  .title {
+    font-family: "Inter", sans-serif;
+    background-color: #E95A08;
+    color: #ffff;
+    font-weight:500;
     font-size: 1rem;
-  }
-
-  .price {
-    font-size: 0.9rem;
-  }
-
-  .primary-btn button {
-    padding: 8px 12px;
-    font-size: 0.9rem;
-  }
-  
-  .dark-6,
-  .dark-7{
-    align-items: start;
-    margin-top: 100%;
-    
-  }
-  .card-des{
-  align-items: center;
-  margin-top: 100px;
-
-  }
-
-p{
-  align-items: center;
+    width: 100%;
+    max-width: 270px;
+    padding: 10px;
+    border: none;
+    margin-top: 22px;
+    cursor: pointer;
 }
 
 /* frame-section */
 .frame{
-  margin-top: 210px;
-  display: flex;
-  gap: 70px;
+    margin-top: 210px;
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    padding: 0 20px;
 }
 section h1{
-   font-family: "Noto Serif", serif;
-  font-weight: bold;
-  font-size: 3.125rem;
-  margin-right: 5px;
+    font-family: "Noto Serif", serif;
+    font-weight: bold;
+    font-size: 3.125rem;
+    margin-right: 5px;
 }
 .dark-11{
-  font-family: "Inter", sans-serif;
-  color: #00000050;
-  font-size: 1.2rem;
+    font-family: "Inter", sans-serif;
+    color: #00000050;
+    font-size: 1.2rem;
 }
 
 section ul li{
- margin-top: 40px;
+    margin-top: 40px;
 }
 
+.for-img {
+    flex: 1;
+}
 
+.plants-lover {
+    flex: 1;
+}
 
-/* offer sectioin */
+/* offer section */
 .offer{
-margin-top: 134px;
+    margin-top: 134px;
+    text-align: center;
 }
-  
 
 h2 {
-   font-family: "Noto Serif", serif;
-  text-align: center;
-  font-weight: bold;
-  font-size: 3.125rem;
+    font-family: "Noto Serif", serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3.125rem;
 }
 p{
-  font-family: "Inter", sans-serif;
-  text-align: center;
-  font-size: 1.1rem;
-  font-weight: 400;
+    font-family: "Inter", sans-serif;
+    /* text-align: center; */
+    font-size: 1.1rem;
+    font-weight: 400;
 }
 .dark-12{
-color: #E95A08;
+    color: #E95A08;
 }
 .dark-13{
-  color: #000000;
+    color: #000000;
 }
 .image-container {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 
 .main-image {
-  
-  height: auto;
-  display: block;
+    height: auto;
+    display: block;
 }
 
 .badge-image {
-  position: absolute;
-  top: -120px;
-  right: -100px;
-  width: 286px; 
-  height: auto;
-   animation: spin 4s linear infinite;
+    position: absolute;
+    top: -120px;
+    right: -100px;
+    width: 286px; 
+    height: auto;
+    animation: spin 4s linear infinite;
 }
 @keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
-
 /* background-section */
-
 .promo-section {
-  padding: 20px;
-  margin-top: 95px;
-  
+    padding: 20px;
+    margin-top: 95px;
 }
 
 .promo-container {
-  display: flex;
-  gap: 15px;
-  height: 400px;
+    display: flex;
+    gap: 15px;
+    height: 400px;
 }
 
 .left-column {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  flex: 1;
-  overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
 }
 
 .right-column {
-  flex: 2;
-
+    flex: 2;
 }
 
 .promo-card {
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
 }
 
 .promo-card.small {
-  height: 423px;
+    height: 195px;
 }
 
 .promo-card.large {
-  height: 100%;
+    height: 100%;
 }
 
 .promo-content {
-  
-  padding: 15px;
-  border-radius: 10px;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 .promo-content h2{
     margin: 0;
     font-size: 2.5rem;
+    font-family: "Noto Serif", serif;
 }
 .promo-content h4 {
     font-size: 1.2rem;
-  margin: 0;
-  font-family: "Noto Serif", serif;
-  
+    margin: 0;
+    font-family: "Noto Serif", serif;
 }
 
 .promo-content a {
     font-size: 1.4rem;
-  color: white;
-  font-weight: bold;
-  display: inline-block;
-  margin-top: 8px;
-  text-decoration: underline;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 8px;
+    text-decoration: underline;
 }
 .right-column a{
     font-size: 1.625rem;
 }
-/* promo section */
+
+/* newsletter section */
 .header {
-            background: url('../images/assets/news-letter-bg.png') no-repeat center/cover;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
-            position: relative;
-            width: 100%;
-            height: 450px;
-            
-        }
-        .header h1 {
-             font-family: "Noto Serif", serif;
-            font-size: 3.125rem;
-            margin-bottom: 20px;
-        }
-        .subscribe-form {
-            display: flex;
-            
-    
-        }
-        .subscribe-form input {
-            padding: 0 15px;
-            font-size: 1rem;
-            border: none;
-            width: 644px;
-            height: 50px;
+    background: url('../images/assets/news-letter-bg.png') no-repeat center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    padding: 0 20px;
+}
+.header h1 {
+    font-family: "Noto Serif", serif;
+    font-size: 3.125rem;
+    margin-bottom: 20px;
+}
+.subscribe-form {
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+}
+.subscribe-form input {
+    padding: 0 15px;
+    font-size: 1rem;
+    border: none;
+    flex: 1;
+    height: 50px;
+}
 
-            
-        }
-        
-        .subscribe-form button {
-             font-family: "Inter", sans-serif;
-            padding: 10px 40px;
-            font-size: 1.1rem;
-            background-color: #E95A08;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        .subscribe-form button:hover {
-            background-color: #e07b2c;
-        }
-       
-        /* footer-section */
+.subscribe-form button {
+    font-family: "Inter", sans-serif;
+    padding: 10px 40px;
+    font-size: 1.1rem;
+    background-color: #E95A08;
+    color: white;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.subscribe-form button:hover {
+    background-color: #e07b2c;
+}
 
-        
-
+/* footer-section */
 footer {
     background-color: #f8f8f8; 
     padding: 40px 20px; 
     border-top: 1px solid #eee; 
-    
 }
 
 .footer-container {
-  max-height: 348px;
     max-width: 1200px; 
     margin: 0 auto; 
     display: flex;
@@ -476,7 +383,6 @@ footer {
     flex: 1; 
     min-width: 180px;
 }
-
 
 .brand-info {
     flex: 1.5; 
@@ -494,15 +400,12 @@ footer {
     font-size: 1.1rem;
     line-height: 1.6;
     color:#00000050;
-
 }
-
 
 .footer-links ul {
     list-style: none; 
     margin: 9px;
     gap: 5px;
-   
 }
 
 .footer-links ul li {
@@ -513,12 +416,7 @@ footer {
     text-decoration: none; 
     color: #666;
     font-size: 1.1rem;
-   
-    
 }
-
-
-
 
 .social-media {
     display: flex;
@@ -547,4 +445,259 @@ footer {
 
 
 
-        
+/* MOBILE RESPONSIVE - 768px and below */
+@media screen and (max-width: 576px) {
+    /* Navbar Mobile */
+    .dark-2{
+display: none;
+    }
+    
+    .navbar .logo img {
+      order: -1;
+        max-width: 100px;
+        align-items: start;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+    
+    nav li a {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    
+    /* Banner Mobile */
+    .banner-contain {
+        flex-direction: column-reverse;
+        text-align: center;
+        margin: 40px auto;
+        padding: 0 20px;
+        max-height: none;
+        gap: 30px;
+    }
+    
+    .dark-4, .dark-5 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    .write-section h1{
+      text-align: left;
+    }
+    .write-section p {
+      text-align: left;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    
+    /* Main Content Mobile */
+    main {
+        margin: 60px auto;
+        padding: 0 20px;
+    }
+    
+    .card-des {
+        margin-bottom: 30px;
+    }
+    
+    .dark-6, .dark-7 {
+        font-size: 2rem;
+    }
+    
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 0;
+    }
+    
+    .primary-btn {
+        width: 100%;
+        max-width: none;
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+    
+    /* Frame Section Mobile */
+    .frame {
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 80px;
+        padding: 0 20px;
+    }
+    
+    section h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .plants-lover {
+        text-align: center;
+    }
+    
+    .badge-image {
+        width: 120px;
+        top: -60px;
+        right: -40px;
+    }
+    
+    /* Offer Section Mobile */
+    .offer {
+        margin-top: 60px;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    /* Promo Section Mobile */
+    .promo-section {
+        margin-top: 40px;
+        padding: 20px;
+    }
+    
+    .promo-container {
+        flex-direction: column;
+        height: auto;
+        gap: 15px;
+    }
+    
+    .left-column {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .promo-card.small {
+        height: 140px;
+    }
+    
+    .promo-card.large {
+        height: 180px;
+    }
+    
+    .promo-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .promo-content h4 {
+        font-size: 1rem;
+    }
+    
+    .promo-content a {
+        font-size: 1rem;
+    }
+    
+   
+    .header {
+        height: 300px;
+        padding: 20px;
+    }
+    
+    .header h1 {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+        line-height: 1.2;
+    }
+    
+    
+    
+    
+    /* Footer Mobile */
+    .footer-container {
+        flex-direction: column;
+        text-align: left;
+        gap: 30px;
+        margin-top: 30px;
+    }
+    
+    .brand-info {
+        max-width: 100%;
+        margin-right: 0;
+    }
+    
+    .social-media {
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+/* EXTRA SMALL MOBILE - 480px and below */
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 15px;
+    }
+    
+    .navbar .logo img {
+        max-width: 80px;
+    }
+    
+    nav li a {
+        padding: 6px 8px;
+        font-size: 12px;
+    }
+    
+    .banner-contain {
+        margin: 30px auto;
+        padding: 0 15px;
+    }
+    
+    .dark-4, .dark-5 {
+        font-size: 1.5rem;
+    }
+    
+    .write-section p {
+        font-size: 0.9rem;
+    }
+    
+    main {
+        margin: 40px auto;
+        padding: 0 15px;
+    }
+    
+    .dark-6, .dark-7, section h1, h2 {
+        font-size: 1.5rem;
+    }
+    
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .frame {
+        gap: 30px;
+        margin-top: 60px;
+        padding: 0 15px;
+    }
+    
+    .badge-image {
+        width: 80px;
+        top: -40px;
+        right: -20px;
+    }
+    
+    .promo-card.small, .promo-card.large {
+        height: 120px;
+    }
+    
+    .promo-content h2 {
+        font-size: 1.2rem;
+    }
+    
+    .promo-content h4 {
+        font-size: 0.9rem;
+    }
+    
+    .header {
+        height: 250px;
+        padding: 15px;
+    }
+    
+    .header h1 {
+        font-size: 1.4rem;
+    }
+    
+    .social-media {
+        gap: 20px;
+    }
+}
