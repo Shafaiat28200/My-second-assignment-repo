@@ -1,4 +1,4 @@
-/* Base Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -73,7 +73,6 @@ nav li a{
 .write-section{
     display: flex;
     flex-direction: column;
-    /* justify-content: flex-end; */
     flex: 1;
 }
 
@@ -207,7 +206,7 @@ h2 {
 }
 p{
     font-family: "Inter", sans-serif;
-    /* text-align: center; */
+    
     font-size: 1.1rem;
     font-weight: 400;
 }
@@ -445,9 +444,9 @@ footer {
 
 
 
-/* MOBILE RESPONSIVE - 768px and below */
+
 @media screen and (max-width: 576px) {
-    /* Navbar Mobile */
+   
     .dark-2{
 display: none;
     }
@@ -469,7 +468,7 @@ display: none;
         font-size: 14px;
     }
     
-    /* Banner Mobile */
+   
     .banner-contain {
         flex-direction: column-reverse;
         text-align: center;
@@ -492,7 +491,7 @@ display: none;
         line-height: 1.5;
     }
     
-    /* Main Content Mobile */
+    
     main {
         margin: 60px auto;
         padding: 0 20px;
@@ -519,7 +518,7 @@ display: none;
         font-size: 0.9rem;
     }
     
-    /* Frame Section Mobile */
+   
     .frame {
         flex-direction: column;
         gap: 40px;
@@ -542,7 +541,7 @@ display: none;
         right: -40px;
     }
     
-    /* Offer Section Mobile */
+    
     .offer {
         margin-top: 60px;
     }
@@ -551,7 +550,7 @@ display: none;
         font-size: 2rem;
     }
     
-    /* Promo Section Mobile */
+   
     .promo-section {
         margin-top: 40px;
         padding: 20px;
@@ -599,11 +598,10 @@ display: none;
         margin-bottom: 30px;
         line-height: 1.2;
     }
-    
-    
-    
-    
-    /* Footer Mobile */
+    .subscribe-form{
+        max-width: 100%;
+    }
+
     .footer-container {
         flex-direction: column;
         text-align: left;
